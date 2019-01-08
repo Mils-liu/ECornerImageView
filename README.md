@@ -22,7 +22,19 @@ dependencies {
 ````
 2.布局  
 cornerRadius为边角的半径，会覆盖cornerHeight和cornerWidth的值
-![image.png](https://upload-images.jianshu.io/upload_images/7019098-2899b5d37bbe75fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+````java
+<com.mils.ecornerimageviewlibrary.view.ECornerImageView
+        android:id="@+id/eimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img01"
+        android:layout_margin="30dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        app:cornerHeight="80dp"
+        app:cornerWidth="40dp"
+        app:cornerRadius="40dp"/>
+````
 3.动态设置  
 ````java
     @Override
